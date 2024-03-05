@@ -31,7 +31,7 @@ body {
 
 .p4{
     font-family: 'Inter', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 40; /* Medium weight */
     color: white
 }
@@ -41,34 +41,6 @@ body {
     font-size: 11px;
     font-weight: 100; /* Medium weight */
     color: black;
-}
-
-.p6{
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    font-weight: 100; /* Medium weight */
-    color: black;
-}
-
-.p7{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 500; /* Medium weight */
-    color: black;
-}
-
-.p8{
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight: 300; /* Medium weight */
-    color: #0C0C20
-}
-
-.p9{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-weight: 300; /* Medium weight */
-    color: #6086B4
 }
 
 .logo-bar {
@@ -89,51 +61,25 @@ body {
 .menu-sidebar {
     background-color: #E5E5E5;
     width: calc(100vw / 6);
-    height: calc(100vh - 70px); /* Adjust height to accommodate logo bar */
+    height: calc(100vh - 50px); /* Adjust height to accommodate logo bar */
     float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
 }
 
 .menu-sidebar ul {
     list-style-type: none;
-    padding: 10px;
-    margin: 5px;
-    text-align: center;
-    height: 40%;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-}
-
-.menu-sidebar ul .menu-wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 0;
 }
 
 .menu-sidebar ul li {
     padding: 10px;
-    position: relative;
-    width: 100%;
 }
 
-.menu-sidebar ul li .underline {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; 
-    align-items: center;
-    height: 2px;
-    background-color: #0C0C20; 
-    display: none;
-}
-
-.menu-sidebar ul li:hover .underline,
-.menu-sidebar ul li:active .underline,
-.menu-sidebar ul li:focus .underline {
-    display: block; /* Show the underline on hover */
+.menu-sidebar ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500; /* Medium weight */
 }
 
 .main-content {
@@ -206,26 +152,20 @@ body {
 
 .content {
     display: flex;
-    justify-content:center;
     align-items: center;
     position: relative;
 }
 
 .icon{
-    width: 20px;
+    width: 20px; /* Adjust size of plus icon */
     margin-right: 10px;
-}
-
-.social-icon{
-    width: 30px;
-    margin-right: 20px;
 }
 
 .underline {
     position: absolute;
     bottom: 5px;
     left: 0;
-    width: 50%; 
+    width: 100%; 
     height: 2px;
     background-color: #0C0C20; /* Change color as needed */
 }
@@ -235,7 +175,7 @@ body {
     background: #FCA311;
     border-radius: 10px;
     align-items: center;
-    padding: 0px 6px;
+    padding: -2px 6px;
     display: inline-block; 
 }
 
@@ -247,6 +187,7 @@ body {
 .categories{
     margin: 3px;
     padding-top: 3px;
+
 }
 
 .category-frame, .category-frame-selected {
@@ -256,97 +197,10 @@ body {
     align-items: center;
     padding: 0px 10px;
     display: inline-block; 
-    margin-right:7px;
-    margin-bottom: 7px;
+    margin-right:2px;
+    margin-bottom: 5px;
 }
 
 .category-frame-selected {
     background: #FCA311;
 }
-
-.dates{
-    align-items: space-around;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.date-frame {
-    align-items: center;
-    background: transparent;
-    border-radius: 10px;
-    align-items: center;
-    padding: 5px 5px;
-    width: 8%;
-    display: inline-block; 
-}
-
-.date-content {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    position: relative;
-   
-}
-
-.event-cards{
-    justify-content:space-evenly;
-    display: flex;
-}
-
-.card {
-    width: 386px;
-    height: 473px;
-    border-radius: 12px;
-    overflow: hidden;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
-}
-
-/* .card-content {
-} */
-
-.description{
-    overflow: hidden;
-    width:100%;
-    height:60px;
-    text-overflow: ellipsis;
-}
-
-.rounded-image {
-    width: 100%;
-    height: 53%;
-    border-radius: 12px;
-    margin-bottom:10px;
-}
-
-.time-price{
-    justify-content: space-between;
-    display:flex;
-    flex-direction: row;
-}
-
-.sign-up{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    width: 80%;
-    padding: 20px;
-}
-
-.text-box{
-    align-items: center;
-    background: white;
-    border-radius: 10px;
-    padding: 0px 10px;
-    width: 100%;
-}
-
-.sign-up-socials{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items:center;
-    padding: 10px;
-}
-

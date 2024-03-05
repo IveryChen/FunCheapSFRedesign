@@ -4,51 +4,201 @@
         <link rel="stylesheet" href = "styles.css" />
         <!-- <link rel='icon' href='favicon.png' type='image/x-icon'/> -->
         <meta charset="utf-8"/>
+        <script src="script.js"></script>
         <meta name="author" content="Ivery Chen">
         <meta name="viewprt" content="width=device-width, initial-scale=1.0"/>
-        <title> CS1300 HTML PAGE </title>
+        <title> FunCheapSF Redesign </title>
     </head>
     <body>
-        <div id="helpful-links">
-            <div class="section-title">
-                title
+        <div class="logo-bar">
+            <img src="./assets/logo_expand.png" alt="Logo">
+            <button class="button-frame">
+                <div class="button-content">
+                    <img class="icon" src="./assets/plus_icon.png" alt="Plus Icon">
+                    <p1>Add Event</p1>
+                </div>
+            </button>
+        </div>
+        <div class = "menu-sidebar">
+
+            <ul>
+                <div class="menu-wrap">
+                    <li>
+                        <p3 href="#">All Events</p3>
+                        <div class="underline"></div>
+                    </li>
+                </div>
+                <div class="menu-wrap">
+                    <li>
+                        <p3 href="#">City Guide</p3>
+                        <div class="underline"></div>
+                    </li>
+                </div>
+                <div class="menu-wrap">
+                    <li>
+                        <p3 href="#">Newsletter</p3>
+                        <div class="underline"></div>
+                    </li>
+                </div>
+            </ul>
+
+            <div class="sign-up-socials">
+                <div class="sign-up">
+                    <p class="p3">Newsletter Sign up</p>
+                    <div class="text-box">
+                        <p class="p2">email address</p>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <img class="social-icon" src="./assets/instagram_icon.png" alt="Instagram Icon">
+                    <img class="social-icon" src="./assets/facebook_icon.png" alt="Facebook Icon">
+                    <img class="social-icon" src="./assets/x_icon.png" alt="X Icon">
+                    <img class="social-icon" src="./assets/discord_icon.png" alt="Discord Icon">
+                </div>
             </div>
 
-                <div class="section">
-                    column
-                    <div>
-                        column title
-                    </div>
-                </div>
-
-                <div>
-                    column
-                    <div>
-                        column title
-                    </div>
-                </div>
-
-                <div>
-                    column
-                    <div>
-                        column title
-                    </div>
-                </div>
-
-                <div>
-                    column
-                    <div>
-                        column title
-                    </div>
-                </div>
-
         </div>
+        <div class="main-content">
+            <div class="all-filters">
 
-        <div id="schedule">
-            
-        </div>
-        <div id="FAQ">
-            
+                <div class="search-bar-frame">
+                    <div class="search-bar">
+                        <img class="icon" src="./assets/search_icon.png" alt="Search Icon">
+                        <p class="p2">Search by name</p>
+                    </div>
+                </div>
+
+                <div class="popular-and-location">
+                    <div class="popular-new-top-section">
+                        <div class="frame">
+                            <div class="content">
+                                <img class="icon" src="./assets/thumbsup_icon.png" alt="ThumbsUp Icon">
+                                <p class="p3">Popular</p>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+
+                        <div class="frame">
+                            <div class="content">
+                                <img class="icon" src="./assets/lightning_icon.png" alt="Lightning Icon">
+                                <p class="p3">New</p>
+                            </div>
+                        </div>
+
+                        <div class="frame">
+                            <div class="content">
+                                <img class="icon" src="./assets/medal_icon.png" alt="Medal Icon">
+                                <p class="p3">Top</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location">
+                        <div class="location-button-frame">
+                            <div class="location-button-content">
+                                <img class="icon" src="./assets/location_icon.png" alt="Location Icon">
+                                <p class="p4">East Bay</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categories" id="category-container"></div>
+
+            </div>
+
+            <div class="scroll-page">
+
+                <div class="dates">
+                        <div class="date-frame">
+                            <div class="date-content">
+                                <p class="p6">Fri 23</p>
+                                <div class="underline"></div>
+                            </div>
+                        </div>
+                        <div class="date-frame">
+                            <div class="date-content">
+                                <p class="p6">Sat 24</p>
+                            </div>
+                        </div>
+                        <div class="date-frame">
+                            <div class="date-content">
+                                <p class="p6">Mon 26</p>
+                            </div>
+                        </div>
+                        <div class="date-frame">
+                            <div class="date-content">
+                                <p class="p6">Tue 27</p>
+                            </div>
+                        </div>
+                        <div class="date-frame">
+                            <div class="date-content">
+                                <p class="p6">Wed 28</p>
+                            </div>
+                        </div>
+                        <div class="date-frame">
+                            <div class="date-content">
+                                <p class="p6">Thu 29</p>
+                            </div>
+                        </div>
+                        <div class="date-frame">
+                            <div class="date-content">
+                                <img class="icon" src="./assets/calendar_icon.png" alt="Calendar Icon">
+                                <p class="p6">Pick Date</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="time-slider">
+                time-slider
+                </div>
+
+                <div class="event-cards">
+
+                    <div class="card">
+                        <img src="./assets/TerrorVault.jpeg" class="rounded-image" alt="Terror Vault">
+                        <div class="card-content">
+                            <div class="category-frame">
+                                <p class="p5"> Art & Museums</p>
+                            </div>
+                            <p class="p7">Terror Vault 1874 Spring Haunt</p>
+                            <div class="description">
+                                <p class="p8">San Francisco’s premiere haunted attraction returns for a 
+                                    brand new season with “The Initiation” an all-new, bigger,
+                                    and more terrifying theatrical and immersive experience...</p>
+                            </div>
+                            <div class="time-price">
+                                <p class="p7">08:00am - 11:00pm</p>
+                                <p class="p9">Free</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/taco.jpeg" class="rounded-image" alt="Tacos">
+                        <div class="card-content">
+                            <div class="category-frame">
+                                <p class="p5"> Eating & Drinking</p>
+                            </div>
+                            <p class="p7">“Pay-What-You-Can” Taco Day</p>
+                            <div class="description">
+                                <p class="p8">Every Friday from 11am to 5 pm, customers can order off 
+                                    the Taco Love menu and pay anywhere from $0 up to $10. 
+                                    When a customer pays the full price of $10, TATO will give 
+                                    a free meal to someone in need in The City.</p>
+                            </div>
+                            <div class="time-price">
+                                <p class="p7">11:00am - 5:00pm</p>
+                                <p class="p9">Free</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
         </div>
     </body>
 
