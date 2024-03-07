@@ -127,16 +127,11 @@ body {
 .card-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
-    /* gap: 20px; 
-    padding: 20px; */
-
     grid-template-rows: repeat(2, 1fr);
-
-    /* justify-content:space-evenly; */
     margin: 5px;
     flex-wrap: wrap;
     height: 100vh;
-    /* overflow:scroll; */
+    overflow:scroll;
 }
 
 #card1 {
