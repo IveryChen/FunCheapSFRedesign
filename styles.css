@@ -2,7 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    overflow: hidden;
 }
+
 
 .p{
     width: inherit; 
@@ -71,6 +73,13 @@ body {
     color: #6086B4
 }
 
+.p10{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700; /* Medium weight */
+    color: #0C0C20
+}
+
 .logo-bar {
     background-color: #0C0C20;
     height: 70px;
@@ -96,7 +105,7 @@ body {
     justify-content:space-between;
 }
 
-.menu-sidebar ul {
+/* .menu-sidebar ul {
     list-style-type: none;
     padding: 10px;
     margin: 5px;
@@ -105,34 +114,43 @@ body {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-}
+} */
 
-.menu-sidebar ul .menu-wrap{
+.menu-sidebar .menu-wrap{
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.menu-sidebar ul li {
-    padding: 10px;
+.menu-sidebar li {
+    /* padding: 10px; */
     position: relative;
     width: 100%;
 }
 
-.menu-sidebar ul li .underline {
-    position: absolute;
+.menu-sidebar li .underline {
+    position: relative;
     bottom: 0;
     left: 0;
-    width: 100%; 
+    width: 30%; 
     align-items: center;
     height: 2px;
     background-color: #0C0C20; 
-    display: none;
+    /* display: none; */
+    display: block;
 }
 
-.menu-sidebar ul li:hover .underline,
-.menu-sidebar ul li:active .underline,
-.menu-sidebar ul li:focus .underline {
+.menu-sidebar li:hover .underline,
+.menu-sidebar li:active .underline,
+.menu-sidebar li:focus .underline {
     display: block; /* Show the underline on hover */
 }
 
@@ -269,6 +287,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin: 10px;
 }
 
 .date-frame {
@@ -289,9 +308,14 @@ body {
    
 }
 
-.event-cards{
+.scrollable-event-cards{
     justify-content:space-evenly;
     display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    /* height: calc(100% - 50px);  */
+    height: 100vh;
+    overflow: scroll;
 }
 
 .card {
@@ -300,11 +324,19 @@ body {
     border-radius: 12px;
     overflow: hidden;
     padding: 10px;
+    margin: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for depth */
 }
 
 /* .card-content {
 } */
+
+.scroll-page{
+    display: flex;
+    flex-direction:column;
+    height: calc(100% - 50px); /* Adjust height as needed */
+    overflow:scroll;
+}
 
 .description{
     overflow: hidden;
@@ -349,4 +381,130 @@ body {
     align-items:center;
     padding: 10px;
 }
+
+.socials{
+}
+
+.time-selection{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.slider {
+    width: 60%;
+    height: 5px;
+    position: relative;
+  }
+  
+.long-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+}
+  
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -7px; /* Adjust positioning */
+}
+
+.circle:nth-child(1) {
+    background-color: #fca311;
+    left: calc(25% - 10px); /* Position first circle */
+}
+  
+.circle:nth-child(2) {
+    background-color: #14213d;
+    left: calc(75% - 10px); /* Position second circle */
+}
+  
+.gradient-bar {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: calc(25% - 10px); 
+    background: linear-gradient(to right, #FCA311, #14213D);
+    width: 50%; /* Adjust width of yellow bar */
+    z-index: 1; /* Make sure it's above the grey circles */
+}
+
+.time-segments {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:15px;
+}
+  
+.main-bars {
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    width: 3px;
+    height: 17px;
+    background-color: #D9D9D9;
+    margin-right: 5px;
+
+    margin-left: calc(var(--time-selection-width, 400px) / 40); 
+}
+  
+.small-bars {
+    width: 3px;
+    height: 8px;
+    background-color: #D9D9D9;
+    margin-right: 5px;
+    margin-left: calc(var(--time-selection-width, 400px) / 40); 
+}
+
+.time-am-pm{
+    width: 70%;
+    margin:-15px;
+}
+
+.time{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.time-frame {
+    align-items: center;
+    background: transparent;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px 5px;
+    width: 8%;
+    display: inline-block; 
+}
+
+.time-content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.menu {
+    display: none;
+}
+  
+@media screen and (max-width: 414px) { /* iPhone width */
+    .menu {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 415px) { /* iPhone width */
+    .menu {
+        display: none;
+    }
+}
+
 
